@@ -6,10 +6,6 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  volumeMode: Filesystem
-  storageClassName: local-storage
-  local:
-    path: /C/Users/inose.t/Pictures/NextCloud
   resources:
     requests:
-      storage: 60Gi
+      storage: 70Gi
