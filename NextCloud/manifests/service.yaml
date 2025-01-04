@@ -1,0 +1,14 @@
+# NextCloudのサービス
+apiVersion: v1
+kind: Service
+metadata:
+  name: nextcloud
+  labels:
+    app: nextcloud
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: nextcloud
+  type: NodePort
