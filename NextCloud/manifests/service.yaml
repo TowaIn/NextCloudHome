@@ -9,6 +9,8 @@ spec:
   ports:
   - port: 80
     targetPort: 80
+    protocol: TCP
+    NodePort: 32162
   selector:
     app: nextcloud
   type: NodePort
